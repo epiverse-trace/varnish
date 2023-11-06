@@ -119,8 +119,12 @@ nav.lesson-content {
 
 .navbar-toggler {
   float: left;
-  color: $black;
+  color: white !important;
   margin-left: 17px;
+}
+
+.navbar-toggler-icon {
+  background-image: escape-svg($navbar-dark-toggler-icon-bg) !important;
 }
 
 .nav-item button {
@@ -175,9 +179,13 @@ nav.lesson-content {
   font-size: 16px;
 }
 
+.nav-item .nav-link {
+  color: white;
+}
 
 .lesson-title {
   font-family: $default_font;
+  color: white;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -281,6 +289,10 @@ a[rel="next"].chapter-link {
   height:14px;
 }
 
+.navbar {
+  background-color: $indigo !important;
+}
+
 @include media-breakpoint-up(md) {
   .progress {
     height: 12px;
@@ -379,6 +391,7 @@ a[rel="next"].chapter-link {
   .lesson-title-md {
     display: block;
     font-family: $default_font;
+    color: white;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -490,6 +503,7 @@ a[rel="next"].chapter-link {
   .lesson-title-md {
     display: inline-block;
     font-family: $default_font;
+    color: white;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
