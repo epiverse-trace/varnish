@@ -110,8 +110,12 @@
 
 .navbar-toggler {
   float: left;
-  color: $black;
+  color: white !important;
   margin-left: 17px;
+}
+
+.navbar-toggler-icon {
+  background-image: escape-svg($navbar-dark-toggler-icon-bg) !important;
 }
 
 .nav-item button {
@@ -166,9 +170,13 @@
   font-size: 16px;
 }
 
+.nav-item .nav-link {
+  color: white;
+}
 
 .lesson-title {
   font-family: 'DM Sans';
+  color: white;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -257,6 +265,10 @@
 
 .small-arrow{
   height:14px;
+}
+
+.navbar {
+  background-color: $indigo !important;
 }
 
 @include media-breakpoint-up(md) {
@@ -361,6 +373,7 @@
   .lesson-title-md {
     display: block;
     font-family: 'DM Sans';
+    color: white;
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -463,6 +476,7 @@
 
   .lesson-title-md {
     display: inline-block;
+    color: white;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 800;
