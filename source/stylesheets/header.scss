@@ -4,8 +4,8 @@ nav.lesson-content {
 }
 
 .bottom-nav {
-  border-top: 45px solid $dark-blue;
-  padding-bottom: 5px;
+//  border-top: 45px solid $dark-blue;
+//  padding-bottom: 5px;
 }
 
 .dropdown-toggle:hover {
@@ -407,10 +407,10 @@ a[rel="next"].chapter-link {
   // border for the DOI button if present
   .top-nav {
     display: block;
-    border-top: 22px solid $dark-blue;
-    .peer-reviewed {
-      border-color: $dark-blue;
-    }
+//    border-top: 22px solid $dark-blue;
+//    .peer-reviewed {
+//      border-color: $dark-blue;
+//    }
   }
   .top-nav.data {
     border-top: 22px solid $dark-green;
@@ -437,7 +437,7 @@ a[rel="next"].chapter-link {
     position: relative;
     z-index: 3;
     padding-bottom: 20px;
-    margin-top: 10px;
+//    margin-top: 10px;
   }
 
   .menu-title {
@@ -511,7 +511,7 @@ a[rel="next"].chapter-link {
 
   .top-nav {
     display: block;
-    border-top: 22px solid $dark-purple;
+//    border-top: 22px solid $dark-purple;
     padding-left: 40px;
     padding-top: 12px;
     padding-right: 20px
