@@ -1,0 +1,29 @@
+on:
+  workflow_dispatch:
+  push:
+    branches: epiversetheme-source
+
+name: Render CSS and Javascript for Epiverse theme
+
+jobs:
+  compress-everything:
+    name: Render css
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Clean
+        run: rm -rf inst/pkgdown/assets/assets/
+      - uses: actions/setup-node@v4
+      - run: npm install
+      - name: Compile sass
+        run: bash squash-sass.sh
+      - name: Commit
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git checkout -b epiversetheme
+          git add inst/ || echo ""
+          git commit -m 'Regenerate css' || echo "No changes to commit"
+          git push --set-upstream origin epiversetheme -f || echo "No changes to commit"
+
+
