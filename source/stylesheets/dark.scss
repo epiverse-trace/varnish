@@ -467,10 +467,10 @@ $color-mode-type: data;
       color: var(--bs-body-color);
     }
     .top-nav {
-      border-top: 22px solid shade-color($blue, 20%);
-      .peer-reviewed {
-        border-color: shade-color($blue, 20%);
-      }
+//      border-top: 22px solid shade-color($blue, 20%);
+//      .peer-reviewed {
+//        border-color: shade-color($blue, 20%);
+//      }
     }
     .top-nav.data {
       border-top: 22px solid shade-color($light-green, 20%);
