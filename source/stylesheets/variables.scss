@@ -1,18 +1,22 @@
 $font_weight_normal: 400;
 $font_weight_bold: 800;
-$default_font: Mulish;
-$mono_font: 'Source Code Pro';
+$default_font: 'DM Sans';
+$mono_font: 'Roboto Mono';
 $asset_base_path: '../assets' !default;
 
 $black: #1F1F1F;
 $dark-grey: #23282A;
 $blue: #1F62FF;
+
+$aqua: #10BED2;
+$indigo: #071E2D;
+
 $gray: #586F7C;
 $off-white: #EBEEEF;
 $bright-white: #FAFAFA;
 $purple: #6320EE;
 $deep-purple: #491997;
-$dark-purple: #201335;
+$dark-purple: $indigo; // This may slightly confusing but it's easier than replacing all occurrences
 $yellow: #FCE762;
 $teal: #1DC5CE;
 $red: #EB4F36;
@@ -20,9 +24,9 @@ $orange: #FFB17A;
 $magenta: #CE1D9D;
 $bright-blue: #0D96F9;
 $light-gray: #F8F9F9;
-$light-blue: #7684C6;
 $powder-blue: #7E8AC9;
-$light-purple: #D2BCF4;
+$light-blue: #3DCBF8;
+$light-purple: $aqua; // This may slightly confusing but it's easier than replacing all occurrences
 $dark-blue: #071159;
 $dark-green: #1D5959;
 $light-red: #FB9595;
